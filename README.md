@@ -71,4 +71,10 @@ public interface StudentRepo extends MongoRepository<Student, Integer>{
    
 }
 ```
- 
+/main/resources/application.properties
+```java
+spring.application.name=MongoSpring
+server.port:8081
+spring.data.mongodb.uri=mongodb+srv://ankitkushwaha90:ankitkushwahahacker99109@cluster0.lbucc1r.mongodb.net/mongospring
+
+```
