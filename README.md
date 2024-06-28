@@ -107,7 +107,7 @@ public class MainController {
 ```
 - Model/student.java
 ```java
-package com.MongoSpring.MongoSpring.Model;
+package com.mongodb.Firstapp.Model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -116,18 +116,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Document
 @Data
-@NoArgsConstructor
+@Document
 @AllArgsConstructor
+@NoArgsConstructor
+
 public class Student {
     @Id
-    private Integer rno;
-     
-
+    private String id;
     private String name;
+    private Integer rno;
 
-    private String address;
 }
 ```
 - Repository/StudentRepo.java
