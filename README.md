@@ -61,14 +61,16 @@ public class Student {
 ```
 - Repository/StudentRepo.java
 ```java
-package com.MongoSpring.MongoSpring.Repository;
+package com.mongodb.Firstapp.StudentRepo;
+
+import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.MongoSpring.MongoSpring.Model.Student;
+import com.mongodb.Firstapp.Model.Student;
 
-public interface StudentRepo extends MongoRepository<Student, Integer>{
-   
+public interface StudentRepo extends MongoRepository<Student, String>{
+    List<Student> findByname(String name);   
 }
 ```
 /main/resources/application.properties
